@@ -1,3 +1,4 @@
+
 import re
 
 def extract_answer(response):
@@ -24,6 +25,6 @@ def extract_again(response):
         return None
 
 def calculate_accuracy(df):
-    df["Correct"] = df["answer"] == df["pred_answer"]
+    df["Correct"] = df.apply(lambda row: row["pred_answer"] in row["answers"], axis=1)
     accuracy = df["Correct"].mean() * 100
     return accuracy
