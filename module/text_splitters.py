@@ -11,13 +11,17 @@ load_dotenv()
 
 class TextSplitter:
     # 읽은 데이터를 split한다.
-    def __init__(self, documents):
+    def __init__(self):
         """
         load document 를 받아서 split한다.
         """
-        self.documents = documents
+        self.documents = None
         self.content = None
         self.token_enc = Tokenizer.from_pretrained("upstage/solar-1-mini-tokenizer")
+
+
+    def setup_document(self,documents):
+        self.documents = documents
 
 
     # Function to split text into chunks based on token limits
