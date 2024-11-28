@@ -3,6 +3,8 @@ import pdfplumber
 from langchain_community.document_loaders import PyMuPDFLoader
 from langchain.schema import Document
 import os
+from dotenv import load_dotenv
+
 
 load_dotenv()
 

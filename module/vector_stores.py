@@ -2,28 +2,36 @@ from langchain_upstage import UpstageEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.docstore.in_memory import InMemoryDocstore
 import os
+from dotenv import load_dotenv
+
 
 load_dotenv()
 
 class VectorStore:
     #VectorStore를 셋업한다.
-    def __init__(self,splits):
-        self.splits = splits
+    def __init__(self):
+        self.splits = None
         self.db = None
         self.id = None
         self.embeddings = None
+        self._setup_embeddings()
 
-    def setup_embeddings(self):
+    def _setup_document(self, splits):
+        self.splits = splits
+
+    def _setup_embeddings(self):
         self.embeddings = UpstageEmbeddings(api_key=os.getenv("UPSTAGE_API_KEY"), model="solar-embedding-1-large")
         return self.embeddings
 
-    def setup_FAISS(self):
+    def setup_FAISS(self, splits):
         if self.embeddings is None:
             print("Embeddings not initialized. Setting up embeddings...")
-            self.setup_embeddings()
+            self._setup_embeddings()
 
         if not self.embeddings:
             raise ValueError("Embeddings must be initialized before setting up FAISS.")
+
+        self._setup_document(splits)
 
         try:
             sample_text = "sample text for dimension check"
