@@ -6,7 +6,7 @@ pip3 install langchain-core
 pip3 install langchain-text-splitters
 pip3 install langchain_upstage
 pip3 install oracledb
-pip3 install angchain-experimental
+pip3 install langchain-experimental
 pip3 install python-dotenv
 pip3 install faiss-cpu
 pip3 install pdfplumber
