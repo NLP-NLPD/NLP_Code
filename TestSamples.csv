@@ -1,0 +1,138 @@
+prompts,answers
+"QUESTION1) 건축학전공의 수업연한은?
+(A) 4년
+(B) 5년
+(C) 6년
+(D) 7년",(B)
+"QUESTION2) 이화여자대학교의 위치는 어디에 있습니까?
+(A) 서울특별시 강남구
+(B) 서울특별시 서대문구
+(C) 서울특별시 중구
+(D) 서울특별시 성동구
+(E) 서울특별시 마포구
+(F) 경기도 성남시",(B)
+"QUESTION3) 계절학기 취득 가능 학점은?
+(A) 2학점
+(B) 4학점
+(C) 6학점
+(D) 8학점",(C)
+"QUESTION4) 다음 중 정기 휴업일에 해당하지 않는 것은 무엇입니까?
+(A) 하기 방학
+(B) 동기 방학
+(C) 개교기념일 (5월 31일)
+(D) 국경일
+(E) 종강일
+(F) 일요일",(E)
+"QUESTION5) 체육특기자의 대회출전 및 훈련으로 인한 출석대체인정은 1학기 수업시간의 ___ 이내로 한다.
+(A) 8분의 1
+(B) 6분의 1
+(C) 4분의 1
+(D) 2분의 1",(D)
+"QUESTION6) 교육과목의 종류와 학점을 정하는 사람은?
+(A) 총장
+(B) 학장
+(C) 이사장
+(D) 부총장",(A)
+"QUESTION7) 다음 중 이화여자대학교에서 제공하지 않는 대학원 과정은 무엇입니까?
+(A) 법학전문대학원
+(B) 통역번역대학원
+(C) 경영전문대학원
+(D) 산업디자인대학원
+(E) 사회복지대학원
+(F) 공연예술대학원",(D)
+"QUESTION8) 이화여자대학교의 교육 이념은 무엇을 기반으로 하고 있습니까?
+(A) 국가 경쟁력 강화
+(B) 기독교 정신과 학문 연구
+(C) 첨단 기술 개발
+(D) 글로벌 경제 협력
+(E) 정부 정책 수립",(B)
+"QUESTION9) 2019년에 경영학과로 입학하여 통계학과를 복수전공한 이화여자대학교에 ________년까지 재학할 수 있다.
+(A) 2026
+(B) 2027
+(C) 2028
+(D) 2029",(B)
+"QUESTION10) 수업일수는 매 학년 몇 주 이상으로 해야 되는가?
+(A) 26주
+(B) 28주
+(C) 30주
+(D) 32주",(C)
+"QUESTION11) What is the primary purpose of contract law?
+(A) To regulate public criminal behavior
+(B) To enforce promises made between private parties
+(C) To protect intellectual property rights
+(D) To settle disputes between governments
+(E) To allocate state resources",(B)
+"QUESTION12) What is the key component of Kant's categorical imperative in philosophy?
+(A) Acting according to a maxim that can be universally applied
+(B) Pursuing the greatest happiness for the greatest number
+(C) Believing in the inherent value of emotions over reason
+(D) Prioritizing individual desires above societal norms
+(E) Following rules set by governing authorities",(A)
+"QUESTION13) What is the primary goal of antitrust laws in business?
+(A) Protecting consumer rights through price control
+(B) Encouraging monopolistic practices for economic growth
+(C) Preventing anti-competitive practices and promoting fair competition
+(D) Standardizing international trade regulations
+(E) Establishing mandatory product safety standards",(C)
+"QUESTION14) Which theory is primarily associated with the concept of operant conditioning?
+(A) Freud's Psychoanalytic Theory
+(B) Maslow's Hierarchy of Needs
+(C) Piaget's Cognitive Development Theory
+(D) Skinner's Behavioral Theory
+(E) Jung's Archetypal Theory
+(F) Bandura's Social Learning Theory
+(G) Watson's Classical Conditioning Theory
+(H) Pavlov's Dog Experiment
+(I) Erikson's Psychosocial Development Theory
+(J) Kohlberg's Moral Development Theory",(D)
+"QUESTION15) Which of the following is the primary goal of corporate strategy?
+(A) Managing daily operations
+(B) Developing a marketing campaign
+(C) Achieving long-term competitive advantage
+(D) Establishing supply chain logistics
+(E) Enhancing employee satisfaction
+(F) Conducting market research
+(G) Diversifying customer demographics
+(H) Preparing financial reports
+(I) Creating innovative technology
+(J) Reducing environmental impact",(C)
+"QUESTION16) Who is best known for the phrase ""Cogito, ergo sum"" (I think, therefore I am)?
+(A) Aristotle
+(B) René Descartes
+(C) Immanuel Kant
+(D) Jean-Paul Sartre
+(E) Friedrich Nietzsche
+(F) Søren Kierkegaard
+(G) Thomas Hobbes
+(H) John Locke
+(I) Plato
+(J) Baruch Spinoza",(B)
+"QUESTION17) What was the primary purpose of the Marshall Plan after World War II?
+(A) Rebuilding European economies
+(B) Establishing the United Nations
+(C) Dividing Germany into occupation zones
+(D) Supporting the League of Nations
+(E) Creating the European Union
+(F) Promoting Soviet-American diplomacy
+(G) Ending the Korean War
+(H) Preventing nuclear proliferation
+(I) Forming NATO
+(J) Resolving territorial disputes in Asia",(A)
+"QUESTION18) What does Maslow's Hierarchy of Needs identify as the most basic human need?
+(A) Self-actualization
+(B) Esteem needs
+(C) Social belonging
+(D) Safety needs
+(E) Physiological needs",(E)
+"QUESTION19) What is the primary focus of a SWOT analysis in business strategy?
+(A) Evaluating customer satisfaction
+(B) Analyzing financial performance
+(C) Assessing internal and external factors affecting a business
+(D) Identifying product development opportunities
+(E) Determining legal risks",(C)
+"QUESTION20) What is the primary purpose of the United Nations established in 1945?
+(A) Promoting international peace and security
+(B) Supporting global trade agreements
+(C) Dividing colonial territories
+(D) Establishing international tax policies
+(E) Creating a global defense alliance",(A)
