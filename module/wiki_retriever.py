@@ -115,11 +115,6 @@ class EnsembleRetriever:
         combined_results = []
         # FAISS retrieval
         static_results = self.static_vector_store.invoke(query)
-        static_results = [
-            Document(page_content=doc["page_content"], metadata=doc.get("metadata", {}))
-            if isinstance(doc, dict) else doc
-            for doc in static_results
-        ]
         combined_results = static_results
         if len(static_results)==0:
         # Wikipedia retrieval
