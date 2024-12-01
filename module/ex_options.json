@@ -1,0 +1,69 @@
+{
+    "scenario1": {
+        "db_save_path": "../faiss_db/semanticchunker",
+        "splitter": {
+            "type": "semantic"
+        },
+        "retriever": {
+            "type": "faiss"
+        },
+        "prompt_option": ["default", "few_shot_prompt"]
+    },
+    "scenario2": {
+        "local_db": "../faiss_db/semanticchunker",
+        "splitter": {
+            "type": "semantic"
+        },
+        "retriever": {
+            "type": "ensemble",
+            "params": {
+                "k": 5
+            }
+        },
+        "prompt_option": ["default", "few_shot_prompt"]
+    },
+    "scenario3": {
+        "db_save_path": "../faiss_db/structurebase",
+        "splitter": {
+            "type": "structure_based"
+        },
+        "retriever": {
+            "type": "faiss"
+        },
+        "prompt_option": ["default", "few_shot_prompt"]
+    },
+    "scenario4": {
+        "local_db": "../faiss_db/structurebase",
+        "splitter": {
+            "type": "structure_based"
+        },
+        "retriever": {
+            "type": "ensemble",
+            "params": {
+                "k": 5
+            }
+        },
+        "prompt_option": ["default", "few_shot_prompt"]
+    },
+    "scenario5": {
+        "db_save_path": "../faiss_db/htmlbase_base",
+        "loader": "html_based",
+        "splitter": { "type": "default" },
+        "retriever": {
+            "type": "faiss"
+        },
+        "prompt_option": ["default", "few_shot_prompt"]
+    },
+    "scenario6": {
+        "local_db": "../faiss_db/htmlbase_base",
+        "loader": "html_based",
+        "splitter": { "type": "default" },
+        "retriever": {
+            "type": "ensemble",
+            "params": {
+                "k": 5
+            }
+        },
+        "prompt_option": ["default", "few_shot_prompt"]
+    }
+}

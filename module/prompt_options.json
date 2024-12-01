@@ -1,0 +1,15 @@
+{
+    "default": {
+        "role": "default",
+        "task": "default",
+        "format": "default",
+        "qna": "default"
+    },
+    "few_shot_prompt": {
+        "role": "default",
+        "task": "default",
+        "format": "default",
+        "qna": "default",
+        "few_shot": "few_shot_3"
+    }
+}

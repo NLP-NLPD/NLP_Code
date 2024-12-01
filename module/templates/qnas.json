@@ -1,0 +1,3 @@
+{
+    "default": "---\nQuestion: {question}\n---\nContext: {context}"
+}

@@ -1,0 +1,3 @@
+{
+    "default": "Use the following pieces of retrieved context to answer the question considering the fact of the question.\nIf you don't know the answer, just say that you don't know, don't try to make up an answer."
+}

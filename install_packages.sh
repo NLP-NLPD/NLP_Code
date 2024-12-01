@@ -1,0 +1,15 @@
+pip3 install python-dotenv
+pip3 install PyPDF2
+pip3 install langchain
+pip3 install langchain-community
+pip3 install langchain-core
+pip3 install langchain-text-splitters
+pip3 install langchain_upstage
+pip3 install oracledb
+pip3 install langchain-experimental
+pip3 install python-dotenv
+pip3 install faiss-cpu
+pip3 install pdfplumber
+pip3 install pymupdf
+pip3 install datasets
+pip3 install wikipedia-api
