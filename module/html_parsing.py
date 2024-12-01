@@ -44,17 +44,12 @@ def extract_text_or_table(pdf_path="../ewha.pdf"):
             for element in elements:
                 content = element.get_text(strip=True)
                 metadata = {"category": category, "html": str(element)}
+                cleaned_content = clean_extracted_text(content)
                 documents.append(Document(page_content=content, metadata=metadata))
 
         if not documents:
             print("No sections were extracted.")
-            
-        else:
-            documents= [
-                {"page_content": clean_extracted_text(doc.page_content), "metadata": doc.metadata}
-                for doc in documents
-                if isinstance(doc.page_content, str)
-            ]
+            return []
         return documents
     else:
         print(f"Error: {response.status_code} - {response.text}")
