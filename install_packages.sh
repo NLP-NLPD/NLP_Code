@@ -12,4 +12,4 @@ pip3 install faiss-cpu
 pip3 install pdfplumber
 pip3 install pymupdf
 pip3 install datasets
-pip3 install wikipedia
+pip3 install wikipedia-api

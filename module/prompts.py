@@ -4,7 +4,7 @@ from langchain.prompts import PromptTemplate
 
 class Prompts:
     # /templates 폴더에서 프롬프트를 불러와 프롬프트 생성. PromptTemplate 로 만든다.
-    def __init__(self, prompt_folder_path="./templates/"):
+    def __init__(self, prompt_folder_path="."):
         self.prompt_folder_path = prompt_folder_path
         self.prompts = {}
         self.role=None
@@ -16,7 +16,7 @@ class Prompts:
 
     def setup_generic(self, component_name, file_name, index=None, key=None):
         """
-        프롬프트 Generic setup 
+        프롬프트 Generic setup
         """
         file_path = os.path.join(self.prompt_folder_path, file_name)
         with open(file_path, "r", encoding="utf-8") as f:
@@ -57,7 +57,7 @@ class Prompts:
         Set up format-specific prompt.
         """
         self.setup_generic("format", file_name, index, key)
-        
+
     def _setup_qna(self, file_name="qnas.json", index=None, key=None):
         """
         Set up QnA-specific prompt.
@@ -70,18 +70,18 @@ class Prompts:
         """
         self.setup_generic("few_shot", file_name, index, key)
 
-    def generate_prompt(self, experiment_options='ex_options.json', option = "default"):
+    def generate_prompt(self, prompt_options='ex_options.json', option = "default"):
         """
         Generate a combined prompt incorporating role, task, format, and optional styles.
         """
         # experiment option에 따라서 _setup_함수들 로드
-        experiment_file_path = os.path.join(self.prompt_folder_path, experiment_options)
+        experiment_file_path = os.path.join(prompt_options)
         if not os.path.exists(experiment_file_path):
             raise FileNotFoundError(f"Experiment options file not found: {experiment_file_path}")
 
         with open(experiment_file_path, "r", encoding="utf-8") as f:
             options = json.load(f)
-        
+
         options = options[option]
 
         # Load settings using _setup_ methods
@@ -94,7 +94,7 @@ class Prompts:
         if "qna" in options:
             self._setup_qna(file_name="qnas.json", key=options["qna"])
         if "few_shot" in options:
-            self._setup_few_shot(file_name="fewshots.json", key=options["fewshot"])
+            self._setup_few_shot(file_name="few_shots.json", key=options["few_shot"])
 
         # Base components
         role_part = self.role.template if self.role else ""

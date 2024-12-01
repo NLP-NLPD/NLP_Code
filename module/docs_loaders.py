@@ -4,6 +4,12 @@ from langchain_community.document_loaders import PyMuPDFLoader
 from langchain.schema import Document
 import os
 from dotenv import load_dotenv
+from bs4 import BeautifulSoup
+import re
+import requests
+from bs4 import BeautifulSoup
+from langchain.schema import Document
+
 
 
 load_dotenv()

@@ -44,6 +44,16 @@ class TextSplitter:
             start = end
 
         return chunks
+    
+    def preprocess_texts(texts):
+        cleaned_texts = []
+        for text in texts:
+            if not isinstance(text, str):
+                text = str(text)
+            if len(text.strip()) > 0:
+                cleaned_texts.append(text.strip())
+        return cleaned_texts
+
 
     # 장, 조 기준 분할
     def split_into_sections(self):
