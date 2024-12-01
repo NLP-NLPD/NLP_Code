@@ -65,58 +65,5 @@
             }
         },
         "prompt_option": ["default", "few_shot_prompt"]
-    },
-    "scenario7": {
-        "db_save_path": "../faiss_db/htmlbase_semantic",
-        "loader": "html_based",
-        "splitter": {
-            "type": "semantic"
-        },
-        "retriever": {
-            "type": "faiss",
-            "params": {}
-        },
-        "prompt_option": ["default", "few_shot_prompt"]
-    },
-    "scenario8": {
-        "local_db": "../faiss_db/htmlbase_semantic",
-        "loader": "html_based",
-        "splitter": {
-            "type": "semantic"
-        },
-        "retriever": {
-            "type": "ensemble",
-            "params": {
-                "k": 5
-            }
-        },
-        "prompt_option": ["default", "few_shot_prompt"]
-    },
-    "scenario9": {
-        "db_save_path": "../faiss_db/htmlbase_structure",
-        "loader": "html_based",
-        "splitter": {
-            "type": "structure_based"
-        },
-        "retriever": {
-            "type": "faiss",
-            "params": {}
-        },
-        "prompt_option": ["default", "few_shot_prompt"]
-    },
-    "scenario10": {
-        "local_db": "../faiss_db/htmlbase_structure",
-        "loader": "html_based",
-        "splitter": {
-            "type": "structure_based"
-        },
-        "retriever": {
-            "type": "ensemble",
-            "params": {
-                "faiss_params": {},
-                "k": 5
-            }
-        },
-        "prompt_option": ["default", "few_shot_prompt"]
     }
 }
