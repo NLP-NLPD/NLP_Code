@@ -2,4 +2,7 @@
 1. install `install_packages.sh`
 2. set your Upstage API Key into .env file.
    `UPSTAGE-API_KEY={your api key}`
-4. open `Colab_Tutorial.ipynb` and test! 
+3. open `Colab_Tutorial.ipynb` and follow the steps to test the system.
+
+### Need Help?
+If you encounter any issues, feel free to contact at kateking001130@ewhain.net.
