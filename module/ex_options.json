@@ -65,5 +65,14 @@
             }
         },
         "prompt_option": ["default", "few_shot_prompt"]
-    }
+    },
+    "scenario_final": {
+        "db_save_path": "../faiss_db/htmlbase_base",
+        "loader": "html_based",
+        "splitter": { "type": "default" },
+        "retriever": {
+            "type": "faiss"
+        },
+        "prompt_option": ["default"]
+    },
 }
